@@ -53,6 +53,10 @@
                                     <constraint firstAttribute="height" constant="44" id="YPW-ka-Y79"/>
                                 </constraints>
                                 <state key="normal" title="change filter"/>
+                                <connections>
+                                    <action selector="changeFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6H2-IK-hJZ"/>
+                                    <action selector="intensityChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ph4-SW-DVE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4d-mk-aEs">
                                 <rect key="frame" x="300" y="605" width="60" height="44"/>
@@ -60,6 +64,9 @@
                                     <constraint firstAttribute="width" constant="60" id="6lq-7C-DIP"/>
                                 </constraints>
                                 <state key="normal" title="save"/>
+                                <connections>
+                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0a0-wL-9nK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -83,6 +90,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WlV-0j-QyU"/>
+                    <connections>
+                        <outlet property="imageView" destination="Qig-JN-qUp" id="Qsk-Gp-vZU"/>
+                        <outlet property="intensity" destination="cRH-P8-zbj" id="EVy-3O-JuV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
